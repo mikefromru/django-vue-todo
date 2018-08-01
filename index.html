@@ -1,0 +1,14 @@
+{% load staticfiles %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://apis.google.com/js/api:client.js"></script>
+    <title>project</title>
+  </head>
+  <body>
+    {% load render_bundle from webpack_loader %}
+    <div id="app">
+    </div>
+    {% render_bundle 'main' %}
+  </body>
+</html>
