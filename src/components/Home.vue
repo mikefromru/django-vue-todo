@@ -55,7 +55,6 @@ export default {
 
     methods: {
         set_bird(x) {
-            console.log(x.complete)
             if (x.complete === true) {
                 axios.patch('/api/todo/' + x.id + '/', {'complete': true})
                 .then(response => {})
