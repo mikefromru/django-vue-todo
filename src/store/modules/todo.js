@@ -40,7 +40,6 @@ const mutations = {
     },
     ADD_TODO: (state, data) => {
         state.name.push(data)
-        console.log(state.name)
     }
 }
 

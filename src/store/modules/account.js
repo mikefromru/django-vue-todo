@@ -48,7 +48,6 @@ const actions = {
     LOGOUT: ({commit, dispatch}) => {
         return new Promise((resolve, reject) => {
             localStorage.clear()
-            console.log('hello workl')
             commit('LOGOUT')
             resolve()
         })

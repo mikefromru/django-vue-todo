@@ -1,5 +1,4 @@
 <template>
-    <!-- <b-container> -->
     <div class="container col-sm-8 col-sm-offset-2">
         <p>Welcome to Todo, {{ profile.username }} <a href @click="logout">logout</a></p>
         <div class="panel">
@@ -34,7 +33,6 @@
         </table>
 
     </div>
-    <!-- </b-container> -->
 </template>
 
 <script>
@@ -85,7 +83,6 @@ export default {
         }
     },
     created() {
-        //this.get_todo()
         this.$store.dispatch('GET_TODO')
     }
 }
@@ -95,11 +92,6 @@ export default {
 
 .taskDone {
     text-decoration: line-through;
-}
-
-.checkbox {
-    /* margin: auto; */
-    /* top: 7px; */
 }
 
 </style>
