@@ -16,8 +16,6 @@ from rest_auth.registration.views import SocialLoginView
 
 from rest_framework import generics 
 
-# from django_filters.rest_framework import DjangoFilterBackend
-
 class GoogleLogin(SocialLoginView):
 
     adapter_class = GoogleOAuth2Adapter
